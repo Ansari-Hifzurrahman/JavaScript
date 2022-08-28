@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+
+        /* #my-div-2{
+            color: red;
+        }
+        
+        #my-div-1{
+            color: blue;
+        } */
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- ondbclick="" -->
+    <!-- onmoseover -->
+    <button onclick="myMessage()">Click Me</button>
+    <button onclick="fName()">Add First Name</button>
+    <div id="my-div-1">
+        Header
+    </div>
+    <div id="my-div-2">
+        Footer
+    </div>
+
+
+    <script>
+        //It is excecuted on page load
+       // document.write(`Marvel`)
+       //Define a function
+    //    function myMessage(){
+            //Problem with doc.write 
+    //     //This document.write also redered on the end of page.
+    //     //We have done using inner html
+    //     let previousValue = document.body.innerHTML;
+    //     document.write(previousValue);
+    //     document.write(`Marvel - `)
+    //     document.write(`Avengers`)
+    //    }
+
+       //Executing a function body when page is loaded
+    //    myMessage();
+    //    myMessage();
+    //    myMessage();
+
+
+        
+        // This is executing after id  
+        // document.getElementById("my-div-1").innerHTML += 'My Content'; 
+        // document.getElementById("my-div-2").innerHTML += 'My Links';
+
+
+        function myMessage(){
+            //Previous value is not replaced with +
+            // document.getElementById("my-div-1").innerHTML += '<t>My Content'; 
+            // document.getElementById("my-div-2").innerHTML += '<t>My Links';
+
+            //Previous value is replaced    
+            // document.getElementById("my-div-1").innerHTML = '<t>My Content'; 
+            // document.getElementById("my-div-2").innerHTML = '<t>My Links';
+
+            // document.getElementById("my-div-1").innerHTML 
+            // = document.getElementById("my-div-2").innerHTML = '<t>My Links';
+                
+            // document.getElementById("my-div-1").innerHTML += "<br>Jarvis";
+            // document.getElementById("my-div-1").style.color = "red";
+            
+            document.getElementById("my-div-1").innerHTML += `<div style="color:red;">Jarvis</div>`;
+            // document.getElementById("my-div-1").innerHTML += "<div class='red'>Jarvis</div>";
+                
+        }
+        function fName(){
+            // document.getElementById("my-div-1").innerHTML += "<br>Ansari";
+            // document.getElementById("my-div-1").innerHTML += "<div style="color:red;">Ansari</div>";
+            document.getElementById("my-div-1").innerHTML += '<div class="blue">Ansari</div>';
+            // document.getElementById("my-div-1").style.color = "blue";
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+<body>
+
+    <button onclick="changeColor('red','Jarvis')">Jarvis</button>
+    <button onclick="changeColor('black','Widow')">Widow</button>
+    <button onclick="changeColor('green','Hulk')">Hulk</button>
+    <button onclick="changeColor('blue','captain')">Captain</button>
+    <button onclick="changeColor('blue')">No name passed</button>
+    <div id="showName">
+    </div>
+
+    <script>
+        //
+        function changeColor(value1,value2){
+            let showName = document.getElementById('showName');
+            // showName.style.backgroundColor = value1; 
+            showName.style.color = value1;    
+            showName.innerHTML = value2;       
+        }
+    </script>
+    
+</body>
+</html>

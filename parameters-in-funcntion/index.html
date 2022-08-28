@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+<body>
+
+    <button onclick="addName('Jarvis')">Add Jarvis</button>
+    <button onclick="addName('Captain')">Add Captain</button>
+    <button onclick="addName('Hulk')">Add Hulk</button>
+    <button onclick="addName('Vision')">Add Vision</button>
+
+    <div id="showName"></div>
+
+    <script>
+        // Inside the js happening
+        // passnamehere = 'Jarvis'
+        function addName(passnamehere){
+            let showName = document.getElementById('showName');
+            // Not recommended
+            // document.getElementById("my-div-1").innerHTML += `<div style="color:red;">Jarvis</div>`;
+
+            showName.innerHTML = passnamehere;
+        }
+    </script>
+    
+</body>
+</html>

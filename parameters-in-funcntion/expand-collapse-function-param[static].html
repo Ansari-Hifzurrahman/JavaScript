@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Value</title>
+    <style>
+        .container {
+            border: 1px solid gray;
+            padding: 10px;
+            border: 1px solid pink;
+        }
+
+        .circle {
+            border: 1px solid pink;
+            display: inline-block;
+            color: pink;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .plus-button{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Static Approach</h2>
+
+
+    <div class="container">
+        <span class="heading">Lorem ipsum dolor sit amet consectetur?</span>
+        <button class="circle plus-button" onclick="showDiv()" id="show-button">
+            +
+        </button>
+        <button class="circle" onclick="hideDiv()" id="hide-button">
+            -
+        </button>
+
+        <div id="body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, sed!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maiores.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, commodi.
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <span class="heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit?</span>
+        <button class="circle plus-button" onclick="showDiv2()" id="show-button2">
+            +
+        </button>
+        <button class="circle" onclick="hideDiv2()" id="hide-button2">
+            -
+        </button>
+
+        <div id="body2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, sed!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maiores.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, commodi.
+            <br>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function showDiv() {
+            let bodyDiv = document.getElementById('body')
+            bodyDiv.style.display = 'block'
+
+            // hide plus button
+            let showButton = document.getElementById('show-button')
+            showButton.style.display = 'none'
+
+            // show minus button
+            let hideButton = document.getElementById('hide-button')
+            hideButton.style.display = 'inline-block'
+
+        }
+
+        function showDiv2() {
+            let bodyDiv = document.getElementById('body2')
+            bodyDiv.style.display = 'block'
+
+            // hide plus button
+            let showButton = document.getElementById('show-button2')
+            showButton.style.display = 'none'
+
+            // show minus button
+            let hideButton = document.getElementById('hide-button2')
+            hideButton.style.display = 'inline-block'
+
+        }
+
+        function hideDiv() {
+            let bodyDiv = document.getElementById('body')
+            bodyDiv.style.display = 'none';
+
+
+            //hide minus button
+            let hideButton = document.getElementById('hide-button')
+            hideButton.style.display = 'none'
+
+            //show plus
+            let showButton = document.getElementById('show-button')
+            showButton.style.display = 'inline-block'
+        }
+
+        function hideDiv2() {
+            let bodyDiv = document.getElementById('body2')
+            bodyDiv.style.display = 'none';
+
+
+            //hide minus button
+            let hideButton = document.getElementById('hide-button2')
+            hideButton.style.display = 'none'
+
+            //show plus
+            let showButton = document.getElementById('show-button2')
+            showButton.style.display = 'inline-block'
+        }
+    </script>
+
+</body>
+
+</html>

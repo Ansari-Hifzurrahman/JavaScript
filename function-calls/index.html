@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Function Call</title>
+</head>
+<body>
+    <button onclick="addJ()">Add Jarvis</button>
+    <button onclick="addC()">Add Captain</button>
+
+    <button onclick="addBoth()">Add Both</button>
+
+    <div id="content" class="" id="">Content</div>
+    <div id="about" class="" id="">About</div>
+
+    <script>
+        function addJ(){
+            //Creatign a reference of an element  (in this case it is div)
+            let contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = contentDiv.innerHTML + '<div>Jarvis</div>';
+
+            /* contentDiv has many 
+            contentDiv.id
+            contentDiv.style
+            contentDiv.classList
+            contentDiv.dataset 
+            */
+
+            //<span>Jarvis</span>
+            //If need to append image. Make sure inside <div><img></div> 
+
+            // let contentImg = document.getElementById('content');
+            // aboutDiv.innerHTML = aboutDiv.innerHTML + `<div><img width="100px" src="m1.jpg"></div>`
+        }
+
+        function addC(){
+            let div = document.getElementById('content');
+            div.innerHTML = div.innerHTML + '<div>Captain</div>';
+        }
+
+        function addBoth(){
+            addJ();
+            addC();
+        }
+
+    </script>
+</body>
+</html>
+
+

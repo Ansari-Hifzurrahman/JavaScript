@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+        }
+        button{
+            border: None;
+            background-color: rgb(243, 243, 243);
+            
+        }
+        button:hover{
+
+             border-bottom: 1PX solid black;
+        }
+        div{
+            /* height: 80PX;
+            width: 200PX; */
+            background-color: grey;
+           
+        }
+       
+    </style>    
+</head>
+<body>
+    
+    <button onclick="Replacetab1()" id="Line1"> Tab1  </button>
+    <button onclick="Replacetab2()" id="Line2"> Tab2 </button>
+    <button onclick="Replacetab3()" id="Line3">  Tab3 </button>
+    
+    <div id="div-1"></div>
+    
+    <script>
+        let text= document.getElementById('div-1')
+        text.innerHTML = 'tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp; tab 1 &nbsp; tab 1&nbsp;tab1 &nbsp;tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp;tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp; '
+     
+        function Replacetab1(){
+            let text= document.getElementById('div-1')
+        text.innerHTML = 'tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp; tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp;tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp;tab 1 &nbsp; tab 1&nbsp; tab1 &nbsp; '
+            let button = document.getElementById('Line1')
+            button.style.borderBottom = "1PX solid black"
+            let button2 = document.getElementById('Line2')
+            button2.style.borderBottom = "None"
+            let button3 = document.getElementById('Line3')
+            button3.style.borderBottom = "None"
+        }
+
+        function Replacetab2(){
+            let text= document.getElementById('div-1')
+        text.innerHTML = 'tab 2 &nbsp; tab 2&nbsp; tab2 &nbsp; tab 2 &nbsp; tab 2&nbsp; tab2 &nbsp;tab 2 &nbsp; tab 2&nbsp; tab2 &nbsp;tab 2 &nbsp; tab 2&nbsp; tab2 &nbsp; '
+        let button = document.getElementById('Line2')
+            button.style.borderBottom = "1PX solid black"
+            let button1 = document.getElementById('Line1')
+            button1.style.borderBottom = "None"
+            let button3 = document.getElementById('Line3')
+            button3.style.borderBottom = "None"
+        }
+        function Replacetab3(){
+            let text= document.getElementById('div-1')
+        text.innerHTML = 'tab 3 &nbsp; tab 3&nbsp; tab3 &nbsp; tab 3 &nbsp; tab 3&nbsp; tab3 &nbsp;tab 3 &nbsp; tab 3 &nbsp; tab3 &nbsp;tab 3 &nbsp; tab 3&nbsp; tab3 &nbsp; '
+        let button = document.getElementById('Line3')
+            button.style.borderBottom = "1PX solid black"
+            let button1 = document.getElementById('Line1')
+            button1.style.borderBottom = "None"
+            let button2 = document.getElementById('Line2')
+            button2.style.borderBottom = "None"
+        }
+    </script>
+</body>
+</html>
