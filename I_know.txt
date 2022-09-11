@@ -1,25 +1,28 @@
-1] I know how to execute some javascript code on a button click.
-2] I know how to append element an element.
-
 
 what? vip
 when?  vip
 how? //not needed 
 
+>>By Main
+1] I know how to execute some javascript code on a button click.
+2] I know how to append element an element.
+3] I know how to add function and its parameters.
+4] I know js executes latest value of function if parameter is not given. [Refer : .\parameters-in-funcntion\index2.html]
 
+>>By file
 For function.html
 1] We want to do something onclick.
--> attack click and create a fucntion.
+-> Attack click and create a fucntion.
 
 2]we want to create a new content inside an element 
--> Tehere must be an id attached to that element 
-->getelementbyId and innerHtml
+-> There must be an id attached to that element 
+-> getelementbyId and innerHtml
 
-For 
-1] I know that I can change any property for any element,
+3] I know that I can change any property for any element,
 style prorperty could be,
 -padding
 -margin
 -backgoundcolor
--h
+-hieght 
+-width
 

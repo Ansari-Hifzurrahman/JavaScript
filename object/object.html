@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 70px;
+            align-items: center;
+            /* width: 350px; */
+
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button onclick="doSomething()">Click Here</button>
+    <div id="output"></div>
+    <script>
+        function doSomething(){
+            let output = document.getElementById('output');
+
+            //object creation
+
+            // let user1 = {
+            //     name : 'Jarvis',
+            //     age : '29',
+            //     number : '2332454345',
+            //     displayGreetings(){
+            //         console.log("Welcome");
+            //     }
+
+            // Object Creation 
+            // let song1 = {
+            // name : 'Jarvis',
+            // rating : 4,
+            // }
+
+            // let song2 = {
+            // name : 'Captain',
+            // rating : 3,
+            // }
+            
+            // output.innerHTML += `<div>${song2.name} - ${song2.rating}<div>`
+            // output.innerHTML += `<div>${song1.name} - ${song1.rating}<div>`
+                
+                //Array of objects
+
+                let songs = [
+                { image : '/image/image.jpg',name : 'vibe',artist : 'Cookie Kawai',rating : 4},
+                { image : '/image/m1.jpg',name : 'My Truck',artist : 'RJ Agarwal',rating : 3},
+                { image : '/image/image.jpg',name : 'Apollo',artist : 'Pulkit Rawat',rating : 2},
+                { image : '/image/m1.jpg',name : 'Moral Of story',artist : 'Salena Mol',rating : 2}
+
+            ]
+            
+                    
+            for (let everySingleSong of songs) {
+                let stars = "&#9733".repeat(everySingleSong.rating);
+                output.innerHTML += `<div class="container">
+                    <img height="50px;" src="${everySingleSong.image}">
+                    <div>${everySingleSong.name} - ${everySingleSong.artist}</div> 
+                    <div>${stars}</div>
+                    <div>`                
+            }
+                
+            
+        }
+
+       
+
+    
+    </script>    
+</body>
+</html>
